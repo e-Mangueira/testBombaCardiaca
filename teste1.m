@@ -43,6 +43,9 @@ system('git log');
     % ou entre commits):
 system('git diff');
 
+%3.4. Se adicionou o arquivo ao staging area por engano ou deseja removê-lo
+    % antes de fazer o commit, use:
+system('git restore --staged teste1.m'); % retornará o arquivo ao estado de “modified” ou “untracked”, dependendo de sua situação anterior
 
 %% 4. Função criada e inserida no matlab para automação com Script
 
