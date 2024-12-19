@@ -82,6 +82,3 @@ end
   https://www.mathworks.com/help/matlab/matlab_prog/use-source-control-with-projects.html
 %}
 
-% Modificação de teste
-
-% Novos comentários paenas para testar fucnionalidades git no matlab
