@@ -47,32 +47,6 @@ system('git diff');
     % antes de fazer o commit, use:
 system('git restore --staged teste1.m'); % retornará o arquivo ao estado de “modified” ou “untracked”, dependendo de sua situação anterior
 
-%% 4. Função criada e inserida no matlab para automação com Script
-
-function git_commit(commit_message)
-    % git_commit(commit_message)
-    % Automação de commit e push no Git via MATLAB.
-    
-    if nargin < 1
-        error('É necessário fornecer uma mensagem para o commit.');
-    end
-
-    try
-        % Adicionar todas as alterações
-        system('git add .');
-        
-        % Realizar commit
-        system(['git commit -m "', commit_message, '"']);
-        
-        % Fazer push para o repositório remoto
-        system('git push origin main');
-        
-        disp('Commit e push realizados com sucesso!');
-    catch ME
-        disp('Erro durante o processo Git:');
-        disp(ME.message);
-    end
-end
 
 %% Referências
 
